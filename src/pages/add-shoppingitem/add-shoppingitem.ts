@@ -17,8 +17,8 @@ import { Item } from ''
 export class AddShoppingitemPage {
   item: Item = {
     name: '',
-    quantity: 0,
-    price: 0,
+    quantity: undefined,
+    price: undefined,
   }
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
