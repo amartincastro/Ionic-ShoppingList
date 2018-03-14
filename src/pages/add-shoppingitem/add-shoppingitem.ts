@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { Item } from ''
 
 /**
  * Generated class for the AddShoppingitemPage page.
@@ -14,7 +15,11 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'add-shoppingitem.html',
 })
 export class AddShoppingitemPage {
-
+  item: Item = {
+    name: '',
+    quantity: 0,
+    price: 0,
+  }
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
